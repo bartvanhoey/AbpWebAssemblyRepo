@@ -1,0 +1,109 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "4.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.0.0",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.0.0",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "AbpWebAssembly.Application": {
+      "path": "src/AbpWebAssembly.Application/AbpWebAssembly.Application.abppkg",
+      "folder": "src"
+    },
+    "AbpWebAssembly.Application.Tests": {
+      "path": "test/AbpWebAssembly.Application.Tests/AbpWebAssembly.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpWebAssembly.Domain.Shared": {
+      "path": "src/AbpWebAssembly.Domain.Shared/AbpWebAssembly.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "AbpWebAssembly.Application.Contracts": {
+      "path": "src/AbpWebAssembly.Application.Contracts/AbpWebAssembly.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "AbpWebAssembly.HttpApi": {
+      "path": "src/AbpWebAssembly.HttpApi/AbpWebAssembly.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "AbpWebAssembly.HttpApi.Client": {
+      "path": "src/AbpWebAssembly.HttpApi.Client/AbpWebAssembly.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "AbpWebAssembly.EntityFrameworkCore.Tests": {
+      "path": "test/AbpWebAssembly.EntityFrameworkCore.Tests/AbpWebAssembly.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpWebAssembly.EntityFrameworkCore": {
+      "path": "src/AbpWebAssembly.EntityFrameworkCore/AbpWebAssembly.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "AbpWebAssembly.TestBase": {
+      "path": "test/AbpWebAssembly.TestBase/AbpWebAssembly.TestBase.abppkg",
+      "folder": "test"
+    },
+    "AbpWebAssembly.Domain.Tests": {
+      "path": "test/AbpWebAssembly.Domain.Tests/AbpWebAssembly.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "AbpWebAssembly.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/AbpWebAssembly.HttpApi.Client.ConsoleTestApp/AbpWebAssembly.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "AbpWebAssembly.DbMigrator": {
+      "path": "src/AbpWebAssembly.DbMigrator/AbpWebAssembly.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "AbpWebAssembly.HttpApi.Host": {
+      "path": "src/AbpWebAssembly.HttpApi.Host/AbpWebAssembly.HttpApi.Host.abppkg",
+      "folder": "src"
+    },
+    "AbpWebAssembly.Blazor": {
+      "path": "src/AbpWebAssembly.Blazor/AbpWebAssembly.Blazor.abppkg",
+      "folder": "src"
+    },
+    "AbpWebAssembly.Blazor.Client": {
+      "path": "src/AbpWebAssembly.Blazor.Client/AbpWebAssembly.Blazor.Client.abppkg",
+      "folder": "src"
+    },
+    "AbpWebAssembly.Domain": {
+      "path": "src/AbpWebAssembly.Domain/AbpWebAssembly.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
