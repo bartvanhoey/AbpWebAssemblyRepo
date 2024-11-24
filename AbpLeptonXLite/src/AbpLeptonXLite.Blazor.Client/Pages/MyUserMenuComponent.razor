@@ -1,0 +1,35 @@
+﻿@using System.Globalization
+@using Microsoft.AspNetCore.Components.Rendering
+@using Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme.Themes.LeptonXLite.Toolbar;
+@using Volo.Abp.DependencyInjection
+@using Volo.Abp.Localization
+
+@inherits LanguageSwitchComponent
+@attribute [ExposeServices(typeof(LanguageSwitchComponent))]
+@attribute [Dependency(ReplaceServices = true)]
+
+@Name
+
+@foreach ( LanguageInfo language1 in (IEnumerable<LanguageInfo>) this.ViewModel.Languages)
+    {
+    LanguageInfo language = language1;
+    string upperInvariant = new CultureInfo(language.CultureName).TwoLetterISOLanguageName.ToUpperInvariant();
+    __builder.OpenElement(16, "button");
+    __builder.AddAttribute<MouseEventArgs>(17, "onclick", EventCallback.Factory.Create<MouseEventArgs>((object) this, (Func<Task>) (() => this.ViewModel.LanguagePlatformManager.ChangeAsync(language))));
+                __builder.AddAttribute(18, "class", "dropdown-item");
+                __builder.AddAttribute(19, "data-lpx-language-option", upperInvariant);
+                __builder.AddContent(20, language.DisplayName);
+                __builder.AddContent(21, " / ");
+                __builder.AddContent(22, upperInvariant);
+                __builder.CloseElement();
+                }
+
+
+@code {
+    string Name = "My User Menu Component";
+
+
+    
+    
+    
+}

@@ -1,0 +1,40 @@
+﻿@using Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme.Themes.LeptonXLite;
+@using Volo.Abp.AspNetCore.Components.Web.LeptonXLiteTheme.Themes.LeptonXLite.Toolbar
+@using Volo.Abp.DependencyInjection
+@inject IJSRuntime JsRuntime;
+
+@inherits MainLayout
+
+
+@attribute [ExposeServices(typeof(MainLayout))]
+@attribute [Dependency(ReplaceServices = true)]
+
+<MyUserMenuComponent />
+
+
+<div id="currentLayout">
+
+    @Body
+    
+</div>
+ 
+
+
+
+
+
+
+
+
+
+@code
+{
+
+
+    
+    
+    
+    
+    
+    
+}
